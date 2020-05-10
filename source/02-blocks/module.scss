@@ -1,0 +1,22 @@
+.module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &--blue {
+        background-color: $blue;
+    }
+
+    &--green {
+        background-color: $green;
+    }
+
+    &__content {
+        text-align: center;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

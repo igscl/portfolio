@@ -319,12 +319,12 @@ html, body {
 
 /* Blocks */
 .section {
-  margin: 2em;
-  padding: 2em; }
+  margin: 2em; }
 
 .hero {
   text-align: center;
   height: auto;
+  padding: 2em;
   background-color: #89DAFF;
   display: flex;
   flex-direction: column;
@@ -355,5 +355,40 @@ html, body {
   .hero__description {
     margin: 0;
     max-width: 700px; }
+
+.module {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .module--blue {
+    background-color: #89DAFF; }
+  .module--green {
+    background-color: #44A1A0; }
+  .module__content {
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+/* Layouts */
+.grid {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 600px) {
+    .grid {
+      flex-direction: row; } }
+  .grid__2col, .grid__3col, .grid__4col {
+    width: 100%; }
+  @media (min-width: 600px) {
+    .grid__2col {
+      width: calc(100% / 2); } }
+  @media (min-width: 600px) {
+    .grid__3col {
+      width: calc(100% / 3); } }
+  @media (min-width: 600px) {
+    .grid__4col {
+      width: calc(100% / 4); } }
 
 /*# sourceMappingURL=styles.css.map */

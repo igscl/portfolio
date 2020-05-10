@@ -1,0 +1,35 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet-portrait-up {    
+        flex-direction: row;
+    }
+
+    &__2col,
+    &__3col,
+    &__4col {
+        width: 100%;
+    }
+
+    &__2col {
+
+        @include tablet-portrait-up {    
+            width: calc(100% / 2);
+        }
+    }
+
+    &__3col {
+
+        @include tablet-portrait-up {    
+            width: calc(100% / 3);
+        }
+    }
+
+    &__4col {
+
+        @include tablet-portrait-up {    
+            width: calc(100% / 4);
+        }
+    }
+}
