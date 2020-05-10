@@ -6,8 +6,10 @@
 @import '01-base/02-mixins';
 @import '01-base/03-typography';
 @import '01-base/04-basics';
+@import '01-base/05-buttons';
 
 /* Blocks */
+@import '02-blocks/nav';
 @import '02-blocks/section';
 @import '02-blocks/hero';
 @import '02-blocks/module';
